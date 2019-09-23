@@ -25,9 +25,9 @@ processed_images/projects/20190920_15hHB101foodpreps_RUN1
 │   ├── dual_modelNonOverlappingWorms_control.csv
 │   └── dual_modelNonOverlappingWorms_full.csv
 └── processed_images
-    └── 20190913_15hHB101preps_01_2x_A01_w1_overlay.png
-│   ├── 20190913_15hHB101preps_01_2x_A02_w1_overlay.png
-│   ├── 20190913_15hHB101preps_01_2x_A03_w1_overlay.png
+    └── 20190913_15hHB101foodpreps_01_2x_A01_w1_overlay.png
+│   ├── 20190913_15hHB101foodpreps_01_2x_A02_w1_overlay.png
+│   ├── 20190913_15hHB101foodpreps_01_2x_A03_w1_overlay.png
 │   ├── ...    
 ├── design.csv
 ├── 20190920_15hHB101foodpreps_RUN1.cpproj
@@ -47,9 +47,7 @@ The experiment directory contains all of the files attached to a specific experi
 
 ### File naming
 
-File names should be formatted with the plate number, name of the strains template file, name of the conditions template file, and name of the controls template file all separated by underscores. All data files must be saved as `.txt` files. In the plate named `p01_N2CBLysateTest_LysateConc5-20_None.txt` `p01` is the plate number, `N2CBLysateTest` refers to the strain template file `N2CBLysateTest.csv`, `LysateConc5-20` refers to the condition template file `LysateConc5-20.csv`, and `None` refers to the control template file `None.csv`.
-
-![File name convention](./READMEfiles/FileNaming.png)
+The processed image files should be formatted with the experiment data, name of the experiment, the plate number, the magnification used for imaging, the experimental timepoint (if needed), the well name, and the wavelength used.name of the conditions template file, and name of the controls template file all separated by underscores. All processed image files must be saved as `.png` files. In the file named `20190913_15hHB101foodpreps_01_2x_A01_w1_overlay.png` the first section `20190913` is the experiment date, `15hHB101preps` is the name of the experiment, `01` is the plate number, `2x` is the magnification used for imaging, `A01` is the well name, and `w1` is the wavelength.
 
 ## Pipeline
 
