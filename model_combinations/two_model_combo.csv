@@ -1,0 +1,10 @@
+full,control,value,model_select,model_flag,cluster_flag
+0,0,0,NA                                                                                                                                                                                                                                                                                  ,NA,NA
+1,0,10,full,NA,F
+2,0,20,full,full_cluster,T
+0,1,1,control,NA,F
+1,1,11,control,NA,F
+2,1,21,control,full_cluster,F
+0,2,2,control,control_cluster,T
+1,2,12,control,control_cluster,T
+2,2,22,control,control_cluster,T
