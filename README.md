@@ -66,19 +66,19 @@ For further information use the command `?read_plate` to access the documentatio
 ### `view_well()`
 If the `remote_server` parameter for this function is set to `TRUE` the `RCurl` package with SFTP protocol support is required. To ensure SFTP protocol support follow these instructions. 
 
-1. In terminal install home brew if necessary (https://brew.sh/)
-    * —  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-2. In terminal install curl with SFTP support (https://github.com/marcelomazza/homebrew-curl-libssh2)
-    * — brew install marcelomazza/homebrew-curl-libssh2/curl
+1. In terminal install home brew if necessary https://brew.sh/
+    + —  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+2. In terminal install curl with SFTP support https://github.com/marcelomazza/homebrew-curl-libssh2
+    + — brew install marcelomazza/homebrew-curl-libssh2/curl
 3. In R, update PATH before installing RCurl. This only effects R session.
-    * — Sys.setenv(PATH=paste('/usr/local/opt/curl/bin', Sys.getenv('PATH'), sep=":"))
+    + — Sys.setenv(PATH=paste('/usr/local/opt/curl/bin', Sys.getenv('PATH'), sep=":"))
 4. In R, confirm that new PATH looks for curl in /usr/local/opt/curl/bin first.
-    * — Sys.getenv("PATH")
+    + — Sys.getenv("PATH")
 5. In R, install RCurl from source
-    * — install.packages("RCurl", type = "source")
+    + — install.packages("RCurl", type = "source")
 6.  In R, load RCurl package and check for sftp protocol support
-    * — library(RCurl)
-    * — RCurl::curlVersion()
+    + — library(RCurl)
+    + — RCurl::curlVersion()
 
 ### `view_dose()`
 
