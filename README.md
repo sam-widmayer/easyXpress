@@ -77,10 +77,10 @@ If the `remote_server` parameter for this function is set to `TRUE` the `RCurl` 
 5. In R, install RCurl from source
     + `install.packages("RCurl", type = "source")`
 6.  In R, load RCurl package and check for sftp protocol support
-    + ```
-    library(RCurl)
-   	RCurl::curlVersion()
-   	```
+```
+library(RCurl)
+RCurl::curlVersion()
+```
 
 ### `view_dose()`
 
