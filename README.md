@@ -9,11 +9,9 @@ devtools::install_github("AndersenLab/easyxpress")
 
 The functionality of the package can be broken down into three main goals:
 
-+ Reading data and diagnositic images generated from CellProfiler pipelines alongside information about strains, conditions, controls, and contamination
++ Reading data and diagnositic images generated from CellProfiler pipelines alongside information about strains, conditions, controls, and experimen tal design.
 
 + Flagging and pruning anomalous data points
-
-+ Regressing control phenotypes from experimental phenotypes
 
 ## Directory structure
 
@@ -65,7 +63,24 @@ For further information use the command `?read_plate` to access the documentatio
 
 ### `flag_data()`
 
-### `view_worm()`
+### `view_well()`
+If the `remote_server` parameter for this function is set to `TRUE` the `RCurl` package with SFTP protocol support is required. To ensure SFTP protocol support follow these instructions. 
+
+1. In terminal install home brew if necessary (https://brew.sh/)
+    * —  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+2. In terminal install curl with SFTP support (https://github.com/marcelomazza/homebrew-curl-libssh2)
+    * — brew install marcelomazza/homebrew-curl-libssh2/curl
+3. In R, update PATH before installing RCurl. This only effects R session.
+    * — Sys.setenv(PATH=paste('/usr/local/opt/curl/bin', Sys.getenv('PATH'), sep=":"))
+4. In R, confirm that new PATH looks for curl in /usr/local/opt/curl/bin first.
+    * — Sys.getenv("PATH")
+5. In R, install RCurl from source
+    * — install.packages("RCurl", type = "source")
+6.  In R, load RCurl package and check for sftp protocol support
+    * — library(RCurl)
+    * — RCurl::curlVersion()
+
+### `view_dose()`
 
 ### `sum_plate()`
 
