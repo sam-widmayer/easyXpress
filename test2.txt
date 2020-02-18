@@ -1,7 +1,0 @@
-LICENSE
-R/
-README.md
-model_combinations/
-projects/
-scripts/
-test2.txt
